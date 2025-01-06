@@ -1,0 +1,49 @@
+{
+  "name": "me-game-web",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "autoprefixer": "^10.4.20",
+    "axios": "^1.7.9",
+    "cra-template": "1.2.0",
+    "jwt-decode": "^4.0.0",
+    "postcss": "^8.4.49",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "react-router-dom": "^7.1.1",
+    "react-scripts": "5.0.1",
+    "three": "^0.171.0",
+    "vite-plugin-vercel": "^9.0.4"
+  },
+  "scripts": {
+    "dev": "vite",
+    "dev:test": "cross-env VITE_ENV=TESTING vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.4",
+    "cross-env": "^7.0.3",
+    "tailwindcss": "^3.4.17",
+    "vite": "^6.0.6",
+    "web-vitals": "^4.2.4"
+  }
+}
