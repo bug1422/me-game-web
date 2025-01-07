@@ -7,14 +7,14 @@ const UserLayout = ({ children }) => {
         <DefaultLayout>
             <div className="min-h-screen bg-sky-100 flex flex-col">
                 <header className="mb-8 py-2 shadow-md w-full">
-                    <div className="px-12">
+                    <div className="px-4 md:px-12">
                         <Header />
                     </div>
                 </header>
-                <div className="body flex-grow h-auto px-12">
+                <div className="body px-4 md:px-12">
                     {children}
                 </div>
-                <footer className="min-h-14 mt-4 p-2 bg-white px-12">
+                <footer className="mt-auto p-2 bg-white px-4 md:px-12">
                     <Footer/>
                 </footer>
             </div>

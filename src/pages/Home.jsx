@@ -35,7 +35,7 @@ const HomePage = () => {
 
     return (
         <>
-            <div className="min-w-full h-40">
+            <div className="min-w-full h-20 md:h-40">
                 <WallpaperHomeBanner />
             </div>
             <div className="my-3">
@@ -46,7 +46,8 @@ const HomePage = () => {
                         <Link to="/Games">See more</Link>
                     </div>
                 </div>
-                <div className="grid grid-cols-5 gap-4 mx-5 my-6">
+
+                <div className="grid grid-cols-2 justify-items-center md:grid-cols-3 xl:grid-cols-5 mx-5 my-6 gap-y-4">
                     {
                         error ?
                             <>
@@ -55,8 +56,8 @@ const HomePage = () => {
                             <>
                                 {
                                     games.slice(0, 5).map((v, i) => (
-                                        <div className="" onClick={() => toGame(v.id)}>
-                                            <GameHolder className={"bg-sky-300"} game={v} />
+                                        <div className="w-2/3 h-full" onClick={() => toGame(v.id)}>
+                                            <GameHolder className={""} game={v} />
                                         </div>
                                     ))
                                 }
